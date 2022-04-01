@@ -1,0 +1,86 @@
+[
+    {
+        "id": "3101",
+        "name": "Asus TUF Gaming F15",
+        "price": "1200",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/fx506lh/fx506lh-1-500x500.jpg",
+        "processor": "Intel Core i5-10300H Processor (8M Cache, 2.50 GHz up to 4.50 GHz)"
+    },
+    {
+        "id": "3102",
+        "name": "MSI Modern 15 A11SB",
+        "price": "1500",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/msi/modern-15/modern-15-01-500x500.jpg",
+        "processor": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz) "
+    },
+    {
+        "id": "3103",
+        "name": "MSI Katana GF66",
+        "price": "2000",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/msi/katana-gf66-12uc/katana-gf66-12uc-03-500x500.jpg",
+        "processor": "Intel Core i7-12700H (24M Cache, 3.50 GHz up to 4.70 GHz)"
+    },
+    {
+        "id": "3104",
+        "name": "Razer Blade 15",
+        "price": "2500",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/razer/blade-15/base-model_1-500x500.jpg",
+        "processor": "Intel Core i7-10875H Processor (16M Cache, 2.30 GHz up to 5.10 GHz) "
+    },
+    {
+        "id": "3105",
+        "name": "HP ZBook Fury G7",
+        "price": "900",
+        "img": "https://www.startech.com.bd/image/cache/catalog/workstation/hp-brand/zbook-fury-g7/zbook-fury-g7-01-500x500.jpg",
+        "processor": "Intel Xeon W-10885M Processor (16M Cache, 2.40 GHz up to 5.30 GHz) "
+    },
+    {
+        "id": "3106",
+        "name": "HP Pavilion Gaming 16",
+        "price": "1100",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/a0095tx/a0095tx-1-500x500.jpg",
+        "processor": "Intel Core i5-10300H Processor (8M Cache, 2.50 GHz up to 4.50 GHz)"
+    },
+    {
+        "id": "3107",
+        "name": "Asus ROG Strix G15",
+        "price": "1350",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/rog-strix-g15-g513ie/rog-strix-g15-g513ie-01-500x500.jpg",
+        "processor": "AMD Ryzen 7 5200H "
+    },
+    {
+        "id": "3108",
+        "name": "Lenovo IdeaPad ",
+        "price": "1800",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-gaming-3/ideapad-gaming-3-001-500x500.jpg",
+        "processor": " Ryzen 7 5800H  "
+    },
+    {
+        "id": "3109",
+        "name": "Acer Nitro 5 AN515-44",
+        "price": "1240",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/nitro-7-an515-55/nitro-7-an515-55-500x500.jpg",
+        "processor": "AMD Ryzen 7 4800H  "
+    },
+    {
+        "id": "31010",
+        "name": "Asus Vivobook Pro 16X",
+        "price": "1600",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-pro-16x-oled-n7600pc/vivobook-pro-16x-oled-n7600pc-10-500x500.jpg",
+        "processor": "Intel Core i7-11370H (12M Cache, 3.3 GHz up to 4.8 GHz, 4 cores) "
+    },
+    {
+        "id": "31011",
+        "name": "Gigabyte A5 X1 Ryzen 9",
+        "price": "2800",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/gigabyte/a5-x1/a5-x1-01-500x500.jpg",
+        "processor": "AMD Ryzen 9 5900HX"
+    },
+    {
+        "id": "31012",
+        "name": "Acer Gaming Aspire",
+        "price": "800",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-7/aspire-7-01-500x500.jpg",
+        "processor": "AMD Ryzen 5 5500U "
+    }
+]

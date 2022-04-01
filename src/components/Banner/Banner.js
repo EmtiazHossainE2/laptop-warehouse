@@ -6,6 +6,8 @@ import banner1 from '../../images/banner1.jpg'
 import banner2 from '../../images/banner2.jpg'
 import banner3 from '../../images/banner3.jpg'
 import banner4 from '../../images/banner4.jpg'
+import ad1 from '../../images/ad1.png'
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <div>
@@ -22,14 +24,14 @@ const Banner = () => {
                     <Carousel>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100 rounded-circle"
+                                className="d-block w-100 rounded"
                                 src={banner1}
                                 alt="First slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100 rounded-circle"
+                                className="d-block w-100 rounded"
                                 src={banner2}
                                 alt="Second slide"
                             />
@@ -37,20 +39,23 @@ const Banner = () => {
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100 rounded-circle"
+                                className="d-block w-100 rounded"
                                 src={banner3}
                                 alt="Third slide"
                             />
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100 rounded-circle"
+                                className="d-block w-100 rounded"
                                 src={banner4}
                                 alt="Fourth slide"
                             />
                         </Carousel.Item>
                     </Carousel>
                 </div>
+            </div>
+            <div className='ads text-center container py-5'>
+                <Link to='/laptops'><img className='w-100 rounded h-50' src={ad1} alt="" /></Link>
             </div>
         </div>
     );

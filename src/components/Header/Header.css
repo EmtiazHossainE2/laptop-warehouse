@@ -1,0 +1,10 @@
+.nav-style a {
+    text-decoration: none;
+    margin-right: 25px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.nav-style {
+    padding: 10px 0;
+}

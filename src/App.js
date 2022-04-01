@@ -12,13 +12,13 @@ import NotFound from './components/NotFound/NotFound';
 
 const App = () => {
     return (
-        <div>
+        <div className='overflow-hidden '>
             <Header></Header>
             <Routes>
                 <Route path='/' element={<Home></Home>}></Route>
                 <Route path='/laptops' element={<Laptops></Laptops>}></Route>
-                <Route path='/contact-us' element={<Contact></Contact>}></Route>
                 <Route path='/about-us' element={<About></About>}></Route>
+                <Route path='/contact-us' element={<Contact></Contact>}></Route>
                 <Route path='/cart' element={<Cart></Cart>}></Route>
                 <Route path='*' element={<NotFound></NotFound>}></Route>
             </Routes>

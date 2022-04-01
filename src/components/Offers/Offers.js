@@ -11,7 +11,7 @@ const Offers = () => {
     return (
         <div className='container my-3 '>
             <h2 className='text-center pb-4'>Hurry! This sale ends in: 10 days</h2>
-            <div className="row ">
+            <div className="row">
                 {
                     offers.map(offer => <Offer key={offer.id} offer={offer}></Offer>)
                 }

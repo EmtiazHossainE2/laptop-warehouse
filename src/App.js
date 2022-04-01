@@ -8,7 +8,7 @@ import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import Cart from './pages/Cart/Cart';
 import NotFound from './components/NotFound/NotFound';
-// import Footer from './pages/Footer/Footer';
+import Footer from './pages/Footer/Footer';
 
 const App = () => {
     return (
@@ -22,7 +22,7 @@ const App = () => {
                 <Route path='/cart' element={<Cart></Cart>}></Route>
                 <Route path='*' element={<NotFound></NotFound>}></Route>
             </Routes>
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
     );
 };

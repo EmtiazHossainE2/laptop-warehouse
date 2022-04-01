@@ -14,8 +14,8 @@ const Offer = (props) => {
                 <li>{feature3}</li>
                 <li>{feature4}</li>
                 <div className='d-flex justify-content-around my-4'>
-                    <button type='button' className="btn btn-warning " >Offer Price :$ {price}</button>
-                    <button type='button' className="btn btn-warning " >Add Cart Now</button>
+                    <button type='button' className="btn btn-warning">Offer Price :$ {price}</button>
+                    <button type='button' className="btn btn-warning">Add Cart Now</button>
                 </div>
             </div>
         </div>

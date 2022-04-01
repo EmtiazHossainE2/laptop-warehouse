@@ -27,24 +27,26 @@ const Products = () => {
     return (
         <div>
             <div className='text-center my-4'>
-                <h2>Search Your Favourite Food</h2>
+                <h2>Search Your Favourite Laptop</h2>
                 <InputGroup className="my-3 mx-auto searchBtn ">
                     <FormControl onChange={searchBtn}
-                        placeholder="Food Name"
-                        aria-label="Food Name"
+                        placeholder="Laptop Name"
+                        aria-label="Laptop Name"
                         aria-describedby="basic-addon2"
                     />
                     <button onClick={handleClick} className='btn btn-warning'>Search Now</button>
                 </InputGroup>
             </div>
 
-            <div className='row'>
-                {
-                    products.map(product => <Product
-                        key={product.idMeal}
-                        product={product}
-                    ></Product>)
-                }
+            <div className="container">
+                <div className='row'>
+                    {
+                        products.map(product => <Product
+                            key={product.idMeal}
+                            product={product}
+                        ></Product>)
+                    }
+                </div>
             </div>
 
 

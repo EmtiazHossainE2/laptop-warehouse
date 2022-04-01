@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1031",
+        "name": "HP ZBook Fury G7",
+        "price": "900",
+        "img": "https://www.startech.com.bd/image/cache/catalog/workstation/hp-brand/zbook-fury-g7/zbook-fury-g7-01-500x500.jpg",
+        "processor": "Intel Xeon W-10885M Processor (16M Cache, 2.40 GHz up to 5.30 GHz) ",
+        "description": " It has a re-designed keyboard. With rubber domes, a power button, and a quiet clickpad for a comfortable experience. The clamshell hinges open almost flat at 170-degree, for easy collaboration and comfortable viewing. It has a 720p HD webcam with IR. "
+    },
+    {
+        "id": "1032",
+        "name": "HP Pavilion Gaming 16",
+        "price": "1100",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/a0095tx/a0095tx-1-500x500.jpg",
+        "processor": "Intel Core i5-10300H Processor (8M Cache, 2.50 GHz up to 4.50 GHz)",
+        "description": "Get the most out of your gaming experience with task prioritization and Dual Force, which allows you to prioritize gaming and split network traffic across two data streams. The enhanced thermals keep everything cool"
+    }
+]

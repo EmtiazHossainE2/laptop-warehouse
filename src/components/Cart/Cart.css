@@ -1,0 +1,9 @@
+.orders-container {
+    background-color: #40407a;
+    color: #fff;
+    padding: 10px 50px 10px 20px;
+    margin-top: 20px;
+    position: fixed;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(47, 48, 48);
+}

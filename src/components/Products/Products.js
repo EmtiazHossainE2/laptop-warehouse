@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { FormControl, InputGroup } from 'react-bootstrap';
 import Product from '../Product/Product';
@@ -7,11 +6,13 @@ const Products = () => {
     const [searchText, setSearchText] = useState('')
     const [products, setProducts] = useState([])
     useEffect(() => {
-        const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=cake`
-        fetch(url)
+        fetch('products.json')
             .then(res => res.json())
-            .then(data => setProducts(data.meals))
-    }, [])
+            .then(data => {
+                const foundPd = data.filter(product => product.name.toLowerCase().includes(searchText.toLowerCase()))
+                setProducts(foundPd)
+            })
+    }, [searchText])
 
     const searchBtn = (e) => {
         setSearchText(e.target.value)
@@ -42,16 +43,12 @@ const Products = () => {
                 <div className='row'>
                     {
                         products.map(product => <Product
-                            key={product.idMeal}
+                            key={product.id}
                             product={product}
                         ></Product>)
                     }
                 </div>
             </div>
-
-
-
-
         </div>
     );
 };

@@ -1,29 +1,10 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 import { FormControl, InputGroup } from 'react-bootstrap';
 import Product from '../Product/Product';
 import './Products.css'
-const Products = () => {
-    const [searchText, setSearchText] = useState('')
-    const [products, setProducts] = useState([])
-    useEffect(() => {
-        fetch('products.json')
-            .then(res => res.json())
-            .then(data => {
-                const foundPd = data.filter(product => product.name.toLowerCase().includes(searchText.toLowerCase()))
-                setProducts(foundPd)
-            })
-    }, [searchText])
 
-    const searchBtn = (e) => {
-        setSearchText(e.target.value)
-
-    }
-
-    const handleClick = () => {
-        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`)
-            .then(res => res.json())
-            .then(data => setProducts(data.meals))
-    }
+const Products = (props) => {
+    const { searchBtn, products, handleAddToCart } = props
 
     return (
         <div>
@@ -35,7 +16,6 @@ const Products = () => {
                         aria-label="Laptop Name"
                         aria-describedby="basic-addon2"
                     />
-                    <button onClick={handleClick} className='btn btn-warning'>Search Now</button>
                 </InputGroup>
             </div>
 
@@ -45,6 +25,7 @@ const Products = () => {
                         products.map(product => <Product
                             key={product.id}
                             product={product}
+                            handleAddToCart={handleAddToCart}
                         ></Product>)
                     }
                 </div>

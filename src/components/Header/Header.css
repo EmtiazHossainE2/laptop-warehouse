@@ -8,3 +8,26 @@
 .nav-style {
     padding: 10px 0;
 }
+
+.cart-icon {
+    font-size: 30px;
+    padding: 0px;
+}
+
+.cart-counter {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-counter span {
+    position: absolute;
+    top: -7px;
+    right: -20px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 100px;
+    background: rgba(244, 238, 238, 0.493);
+    padding: 0px;
+    color: white;
+}

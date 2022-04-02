@@ -3,10 +3,11 @@ import './Header.css'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import CustomLink from '../CustomLink/CustomLink';
 import { Link } from 'react-router-dom';
-const Header = () => {
+import { FaCartPlus } from 'react-icons/fa'
+const Header = ({ cart }) => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Container className='py-2'>
                     <Link className='text-light text-decoration-none' to='/'><h3 >Laptop WareHouse</h3></Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -16,9 +17,13 @@ const Header = () => {
                             <CustomLink className='py-5' to='/laptops'>Laptops</CustomLink>
                             <CustomLink className='py-5' to='/about-us'>About Us</CustomLink>
                             <CustomLink className='py-5' to='/contact-us'>Contact Us</CustomLink>
-                            <CustomLink className='py-5' to='/orders'>Orders</CustomLink>
-
                         </Nav>
+                        <Link className='text-light' to='/orders'>
+                            <div className=" cart-counter">
+                                <span>{cart.length}</span>
+                                <FaCartPlus className='cart-icon'></FaCartPlus>
+                            </div>
+                        </Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

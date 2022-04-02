@@ -12,12 +12,16 @@ import Orders from './pages/Orders/Orders';
 import { FaCartPlus } from 'react-icons/fa'
 import useProducts from './hooks/useProducts';
 import './App.css'
+// import useCart from './hooks/useCart';
+// import { addToDb } from './utilities/fakedb';
 
 const App = () => {
-
     //get custom hook 
     const [searchText, setSearchText] = useState('')
     const [products, setProducts] = useProducts()
+    const [cart, setCart] = useState([])
+
+    console.log(cart);
 
     //input field
 
@@ -31,8 +35,10 @@ const App = () => {
     }, [searchText, setProducts])
 
     //handle addToCart 
-    const handleAddToCart = (product) => {
-        console.log(product);
+    const handleAddToCart = (selectedProduct) => {
+        let newCart = [...cart, selectedProduct]
+        setCart(newCart)
+
     }
 
     //handle search filed
@@ -42,9 +48,10 @@ const App = () => {
     }
     return (
         <div className='overflow-hidden '>
-            <Header></Header>
+            <Header cart={cart}></Header>
             <Routes>
                 <Route path='/' element={<Home
+
                     products={products}
                     searchBtn={searchBtn}
                     handleAddToCart={handleAddToCart}
@@ -55,9 +62,7 @@ const App = () => {
                 <Route path='/orders' element={<Orders></Orders>}></Route>
                 <Route path='*' element={<NotFound></NotFound>}></Route>
             </Routes>
-            <div className="cart-icon-container">
-                <FaCartPlus className='cart-icon'></FaCartPlus>
-            </div>
+
             <Footer></Footer>
         </div>
     );

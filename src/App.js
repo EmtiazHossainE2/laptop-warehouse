@@ -9,17 +9,16 @@ import About from './pages/About/About';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './pages/Footer/Footer';
 import Orders from './pages/Orders/Orders';
-import { FaCartPlus } from 'react-icons/fa'
 import useProducts from './hooks/useProducts';
 import './App.css'
-// import useCart from './hooks/useCart';
-// import { addToDb } from './utilities/fakedb';
+import useCart from './hooks/useCart';
+import { addToDb } from './utilities/fakedb';
 
 const App = () => {
     //get custom hook 
     const [searchText, setSearchText] = useState('')
     const [products, setProducts] = useProducts()
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useCart(products)
 
     console.log(cart);
 
@@ -35,10 +34,20 @@ const App = () => {
     }, [searchText, setProducts])
 
     //handle addToCart 
-    const handleAddToCart = (selectedProduct) => {
-        let newCart = [...cart, selectedProduct]
+    const handleAddToCart = selectedProduct => {
+        let newCart = []
+        const exists = cart.find(product => product.id === selectedProduct.id)
+        if (!exists) {
+            selectedProduct.quantity = 1
+            newCart = [...cart, selectedProduct]
+        }
+        else {
+            const rest = cart.filter(product => product.id !== selectedProduct.id)
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest, exists]
+        }
         setCart(newCart)
-
+        addToDb(selectedProduct.id)
     }
 
     //handle search filed

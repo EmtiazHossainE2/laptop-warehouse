@@ -1,9 +1,7 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
 import Offers from '../../components/Offers/Offers';
 import Products from '../../components/Products/Products';
-import { FaCartPlus } from 'react-icons/fa'
 import './Home.css'
 
 const Home = ({ handleAddToCart, products, searchBtn, cart }) => {

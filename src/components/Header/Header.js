@@ -16,7 +16,7 @@ const Header = () => {
                             <CustomLink className='py-5' to='/laptops'>Laptops</CustomLink>
                             <CustomLink className='py-5' to='/about-us'>About Us</CustomLink>
                             <CustomLink className='py-5' to='/contact-us'>Contact Us</CustomLink>
-                            <CustomLink className='py-5' to='/cart'>Cart</CustomLink>
+                            <CustomLink className='py-5' to='/orders'>Orders</CustomLink>
 
                         </Nav>
                     </Navbar.Collapse>

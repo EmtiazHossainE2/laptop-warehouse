@@ -46,21 +46,21 @@
         "name": "Asus ROG Strix G15",
         "price": "1350",
         "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/rog-strix-g15-g513ie/rog-strix-g15-g513ie-01-500x500.jpg",
-        "processor": "AMD Ryzen 7 5200H "
+        "processor": "AMD Ryzen 7 5200H Processor (8M Cache, 2.50 GHz up to 4.50 GHz)"
     },
     {
         "id": "3108",
         "name": "Lenovo IdeaPad ",
         "price": "1800",
         "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-gaming-3/ideapad-gaming-3-001-500x500.jpg",
-        "processor": " Ryzen 7 5800H  "
+        "processor": " Ryzen 7 5800H  Processor (8M Cache, 2.50 GHz up to 4.50 GHz)"
     },
     {
         "id": "3109",
         "name": "Acer Nitro 5 AN515-44",
         "price": "1240",
         "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/nitro-7-an515-55/nitro-7-an515-55-500x500.jpg",
-        "processor": "AMD Ryzen 7 4800H  "
+        "processor": "AMD Ryzen 7 4800H  Processor (8M Cache, 2.50 GHz up to 4.50 GHz)"
     },
     {
         "id": "31010",
@@ -74,13 +74,13 @@
         "name": "Gigabyte A5 X1 Ryzen 9",
         "price": "2800",
         "img": "https://www.startech.com.bd/image/cache/catalog/laptop/gigabyte/a5-x1/a5-x1-01-500x500.jpg",
-        "processor": "AMD Ryzen 9 5900HX"
+        "processor": "AMD Ryzen 9 5900HX Processor (8M Cache, 2.50 GHz up to 4.50 GHz)"
     },
     {
         "id": "31012",
         "name": "Acer Gaming Aspire",
         "price": "800",
         "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/aspire-7/aspire-7-01-500x500.jpg",
-        "processor": "AMD Ryzen 5 5500U "
+        "processor": "AMD Ryzen 5 5500U Processor (8M Cache, 2.50 GHz up to 4.50 GHz)"
     }
 ]

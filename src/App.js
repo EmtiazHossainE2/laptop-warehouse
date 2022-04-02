@@ -14,8 +14,13 @@ import useProducts from './hooks/useProducts';
 import './App.css'
 
 const App = () => {
+
+    //get custom hook 
     const [searchText, setSearchText] = useState('')
     const [products, setProducts] = useProducts()
+
+    //input field
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
@@ -25,10 +30,12 @@ const App = () => {
             })
     }, [searchText, setProducts])
 
-    const handleAddToCart = (id) => {
-        console.log(id);
+    //handle addToCart 
+    const handleAddToCart = (product) => {
+        console.log(product);
     }
 
+    //handle search filed
     const searchBtn = (e) => {
         setSearchText(e.target.value)
 

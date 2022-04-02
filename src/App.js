@@ -13,6 +13,7 @@ import useProducts from './hooks/useProducts';
 import './App.css'
 import useCart from './hooks/useCart';
 import { addToDb } from './utilities/fakedb';
+import Construction from './components/Construction/Construction';
 
 const App = () => {
     //get custom hook 
@@ -69,6 +70,7 @@ const App = () => {
                 <Route path='/about-us' element={<About></About>}></Route>
                 <Route path='/contact-us' element={<Contact></Contact>}></Route>
                 <Route path='/orders' element={<Orders></Orders>}></Route>
+                <Route path='/orders/construction' element={<Construction></Construction>}></Route>
                 <Route path='*' element={<NotFound></NotFound>}></Route>
             </Routes>
 

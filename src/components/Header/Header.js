@@ -7,7 +7,7 @@ import { FaCartPlus } from 'react-icons/fa'
 const Header = ({ cart }) => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
                 <Container className='py-2'>
                     <Link className='text-light text-decoration-none' to='/'><h3 >Laptop WareHouse</h3></Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -15,7 +15,7 @@ const Orders = () => {
     }
     return (
         <div className='container'>
-            <h3 className='mt-5 pt-5 text-center'>Order page</h3>
+            <h3 className='mt-2 text-center'>Order page</h3>
             <div className="row">
                 <div className="col-lg-4">
                     <Cart cart={cart}></Cart>

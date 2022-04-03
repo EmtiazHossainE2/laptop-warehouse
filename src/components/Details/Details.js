@@ -6,7 +6,7 @@ const Details = () => {
     console.log(detailsId);
     const [detail, setDetails] = useState({})
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/EmtiazHossainE2/laptop-warehouse/main/public/products.json?token=GHSAT0AAAAAABSEMEUPPJRPENPJ2K3XZTOMYSJM55A')
+        fetch('https://raw.githubusercontent.com/EmtiazHossainE2/laptop-warehouse/main/public/products.json')
             .then(res => res.json())
             .then(data => {
                 const pd = data.find(d => d.id == detailsId)
@@ -23,6 +23,7 @@ const Details = () => {
                 <div className="col-lg-6  d-flex  justify-content-center  ">
                     <div className='mt-3'>
                         <h2 >Name : {detail.name} </h2>
+                        <h5>Processor : {detail.processor}</h5>
                     </div>
                 </div>
             </div>

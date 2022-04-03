@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Product.css'
 const Product = (props) => {
     const { handleAddToCart, product } = props
-    const { name, img, price, processor } = product
+    const { name, img, price, processor, id } = product
 
     return (
         <div className='col-lg-4 col-md-6'>
@@ -15,7 +15,7 @@ const Product = (props) => {
                 <div className="d-flex justify-content-between pb-3 pt-3">
                     <button className='btn btn-style' onClick={() => handleAddToCart(product)}>Add To Cart</button>
                     {/* <button className='btn btn-style' onClick={showDetails}>View Details</button> */}
-                    <Link to={'/details/'}><button className='btn btn-style'>View Details</button></Link>
+                    <Link to={'/details/' + id}><button className='btn btn-style'>View Details</button></Link>
                 </div>
             </div>
 

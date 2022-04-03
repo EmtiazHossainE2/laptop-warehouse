@@ -14,14 +14,13 @@ import './App.css'
 import useCart from './hooks/useCart';
 import { addToDb } from './utilities/fakedb';
 import Construction from './components/Construction/Construction';
+import Details from './components/Details/Details';
 
 const App = () => {
     //get custom hook 
     const [searchText, setSearchText] = useState('')
     const [products, setProducts] = useProducts()
     const [cart, setCart] = useCart(products)
-
-    console.log(cart);
 
     //input field
 
@@ -69,6 +68,7 @@ const App = () => {
                 <Route path='/laptops' element={<Laptops></Laptops>}></Route>
                 <Route path='/about-us' element={<About></About>}></Route>
                 <Route path='/contact-us' element={<Contact></Contact>}></Route>
+                <Route path='/details/:detailsId' element={<Details></Details>}></Route>
                 <Route path='/orders' element={<Orders></Orders>}></Route>
                 <Route path='/orders/construction' element={<Construction></Construction>}></Route>
                 <Route path='*' element={<NotFound></NotFound>}></Route>

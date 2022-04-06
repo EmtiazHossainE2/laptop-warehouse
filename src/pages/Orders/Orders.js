@@ -13,6 +13,7 @@ const Orders = () => {
         setCart(rest)
         removeFromDb(product.id)
     }
+    console.log(cart);
     return (
         <div className='container'>
             <h3 className='mt-2 text-center'>Order page</h3>

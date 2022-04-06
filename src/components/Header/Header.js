@@ -5,6 +5,7 @@ import CustomLink from '../CustomLink/CustomLink';
 import { Link } from 'react-router-dom';
 import { FaCartPlus } from 'react-icons/fa'
 const Header = ({ cart }) => {
+
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >

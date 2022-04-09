@@ -15,6 +15,8 @@ import useCart from './hooks/useCart';
 import { addToDb } from './utilities/fakedb';
 import Construction from './components/Construction/Construction';
 import Details from './components/Details/Details';
+import Signup from './pages/Signup/Signup';
+import Login from './pages/Login/Login';
 
 const App = () => {
     //get custom hook 
@@ -71,6 +73,8 @@ const App = () => {
                 <Route path='/details/:detailsId' element={<Details></Details>}></Route>
                 <Route path='/orders' element={<Orders></Orders>}></Route>
                 <Route path='/orders/construction' element={<Construction></Construction>}></Route>
+                <Route path='/login' element={<Login></Login>}></Route>
+                <Route path='/signup' element={<Signup></Signup>}></Route>
                 <Route path='*' element={<NotFound></NotFound>}></Route>
             </Routes>
 

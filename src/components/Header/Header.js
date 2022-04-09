@@ -18,6 +18,8 @@ const Header = ({ cart }) => {
                             <CustomLink className='py-5' to='/laptops'>Laptops</CustomLink>
                             <CustomLink className='py-5' to='/about-us'>About Us</CustomLink>
                             <CustomLink className='py-5' to='/contact-us'>Contact Us</CustomLink>
+                            <CustomLink className='py-5' to='/login'>Log in</CustomLink>
+                            <CustomLink className='py-5' to='/signup'>Sign up</CustomLink>
                         </Nav>
                         <Link className='text-light' to='/orders'>
                             <div className=" cart-counter">

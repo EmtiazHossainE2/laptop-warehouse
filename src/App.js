@@ -17,6 +17,7 @@ import Construction from './components/Construction/Construction';
 import Details from './components/Details/Details';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
+import Profile from './components/Profile/Profile';
 
 const App = () => {
     //get custom hook 
@@ -75,6 +76,7 @@ const App = () => {
                 <Route path='/orders/construction' element={<Construction></Construction>}></Route>
                 <Route path='/login' element={<Login></Login>}></Route>
                 <Route path='/signup' element={<Signup></Signup>}></Route>
+                <Route path='/profile' element={<Profile></Profile>}></Route>
                 <Route path='*' element={<NotFound></NotFound>}></Route>
             </Routes>
 
